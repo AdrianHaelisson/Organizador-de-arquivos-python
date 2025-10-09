@@ -51,7 +51,7 @@ if __name__ == "__main__":
     parser.add_argument("directory", help="The directory to organize.")
     args = parser.parse_args()
 
-    if os.path.isdir(.directory):
+    if os.path.isdir(args.directory):
         organize_directory(args.directory)
         print("Files organized successfully!")
     else:
